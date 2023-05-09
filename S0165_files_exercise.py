@@ -20,3 +20,16 @@ Send derefter denne Teams-meddelelse til din lærer: <filename> færdig
 Fortsæt derefter med den næste fil.
 """
 
+filepath = "input1.txt"
+with open(filepath) as file:
+    lines = file.readlines()
+name_age_list = []
+for i in lines:
+    name_age_list.append(i.split(" "))
+
+for name_and_age in name_age_list:
+    print(f" {name_and_age[0]} is {name_and_age[1].strip()} years old")
+
+
+
+
