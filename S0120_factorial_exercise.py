@@ -33,6 +33,17 @@ Fortsæt derefter med den næste fil.
 """
 
 #  Write your function below this line.
+def factorial(number):
+    result = number
+    for i in range(number -1, 0, -1):
+        result = result * i
+    print(result)
+
+
+
+
+
 
 
 # Here starts the main program. From the main program you can call your functions.
+factorial(5)
