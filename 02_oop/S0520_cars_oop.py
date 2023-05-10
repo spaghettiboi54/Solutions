@@ -24,6 +24,8 @@ class Vehicle:  # this starts the definition of a class
     def __repr__(self):
         return f"Vehicle: {self.wheels} wheels, {self.max_speed} km/h maximum speed"
 
+
+
     def drive(self):  # This is a method. A method is a function that belongs to a class.
         print("WROOOOOOOOM!")
 
@@ -33,4 +35,5 @@ car2 = Vehicle(8, 100)
 
 print(car1)
 print(car2)
+print(Vehicle)
 car1.drive()  # the method drive of the class Vehicle is called on the object car1

@@ -52,8 +52,8 @@ import turtle  # this imports a library called "turtle". A library is (someone e
 
 
 
-def many_squares()
-
+def many_squares():
+    return "bruh"
 
 def square(length):
     dan = turtle.Turtle()

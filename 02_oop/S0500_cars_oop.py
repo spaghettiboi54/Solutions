@@ -27,4 +27,4 @@ car2.max_speed = 100
 
 print("wheels", car1.wheels, "maximum speed", car1.max_speed)  # print out the attributes of car1
 print("wheels", car2.wheels, "maximum speed", car2.max_speed)  # print out the attributes of car2
-car1.drive()  # the method drive of the class Vehicle is called on the object car1
+Vehicle.drive(self)  # the method drive of the class Vehicle is called on the object car1
