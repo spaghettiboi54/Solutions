@@ -15,7 +15,7 @@ Tilføj oop-relaterede kommentarer til denne kode.
 
 
 class Building:
-    def __init__(self, area, floors, value):
+    def __init__(self, area, floors, value): #constructor
         self.area = area
         self.floors = floors
         self._value = value
@@ -36,9 +36,11 @@ class Skyscraper(Building):
         self._adjust_value(6)
 
 
-small_house = Building(160, 2, 200000)
+small_house = Building(160, 2, 200000) #instancing, constructor is called
 skyscraper = Skyscraper(5000, 25, 10000000)
 
-for building in [small_house, skyscraper]:
+for building in [small_house, skyscraper]: # polymorphism, same function call is used on instances of different classes.
     print(f'This building has {building.floors} floors and an area of {building.area} square meters.')
     building.renovate()
+
+

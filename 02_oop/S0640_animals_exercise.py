@@ -44,3 +44,49 @@ Når dit program er færdigt, skal du skubbe det til dit github-repository.
 Send derefter denne Teams-meddelelse til din lærer: <filename> færdig
 Fortsæt derefter med den næste fil."""
 
+class Animal:
+    def __init__(self, name, weight, sound, height, legs, female):
+        self._name = name
+        self._weight = weight
+        self._sound = sound
+        self._height = height
+        self._legs = legs
+        self._female = female
+
+    def __repr__(self):
+        return f"this animal is a {self._name}, it weighs {self._weight} kg, calling it a female would be a {self._female} statement"
+
+    def make_noise(self):
+        print(self._sound)
+
+
+
+
+class Dog(Animal):
+    def __init__(self, name, weight, sound, height, tail_length, female, hunts_sheep):
+        self._name = name
+        self._weight = weight
+        self._sound = sound
+        self._height = height
+        self._female = female
+        self._tail_length = tail_length
+        self._hunts_sheep = hunts_sheep
+
+    def wag_tail(self):
+        print(f"the dog wags its {self._tail_length} cm long tail")
+
+
+    def mate(dog1, dog2,name):  #HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH spørg uli
+        if (dog1._female == dog2._female):
+            print("dogs must be opposite gender to mate")
+            return
+        return Dog(name, dog1._weight, dog2._sound, dog1._height, dog2._tail_length, dog1._female, dog2._hunts_sheep)
+
+
+
+
+
+
+animal1 = Animal("cheetah", 200, "rawr", legs=4, female=True, height=22)
+
+

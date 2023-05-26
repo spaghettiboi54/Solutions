@@ -1,3 +1,2 @@
-x = 2
-y = 4
-print(x > y)
+for i in range(0,1):
+    print(i)
