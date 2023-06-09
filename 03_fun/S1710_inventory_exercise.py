@@ -26,7 +26,15 @@ Når dit program er færdigt, skal du skubbe det til dit github-repository.
 Send derefter denne Teams-meddelelse til din lærer: <filename> færdig
 Fortsæt derefter med den næste fil."""
 
-x = 10101
+def take_inventory(lines):
+    container = []
+    counter = 0
+    for line in range(lines):
+        new_line = []
+        for
+
+
+
 
 
 

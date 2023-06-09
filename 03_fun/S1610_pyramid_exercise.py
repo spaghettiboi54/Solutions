@@ -31,7 +31,7 @@ def create_pyramid(lines):
     pyramid.append(initial_numbers)
     for new_line_index in range(1, lines): #index of
         pyramid.append([])
-        for index in range(len(pyramid[new_line_index - 1]) - 1): #iterating over the index of each item in previous line
+        for index in range(len(pyramid[-2]) - 1): #iterating over the index of each item in previous line
             pyramid[new_line_index].append(pyramid[new_line_index - 1][index])
             if pyramid[new_line_index - 1][index] + pyramid[new_line_index - 1][index + 1] == new_line_index + 1:
                 pyramid[new_line_index].append(new_line_index + 1)
